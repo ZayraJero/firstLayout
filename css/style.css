@@ -6,46 +6,42 @@ body {
     background-image: url("/assets/MaskGroup.png");
     background-position: 50% 50%;
     width: 100%;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
     padding-top: 1%;
-    position: relative;
-    background-color: #F9FFF2;
+    background-color: #F9FFF2; 
 }
 
 .nav-section{
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    align-content: space-between;
 }
 
 .logo{
-    width: 30%;
+    width: 10%;
     height: 3%;
 }
 
-/* .nav-a{
-    margin-left: 50%;
-} */
-
-.nav-a ul, a{
+.nav-section ul, a{
     color: #B5B3B3;
     list-style: none;
     text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
 }
 
 .signUp{
     background-color: #410FF8;
     border: none;
     color: white;
-    padding: 7px 17px;
+    padding: 7px 18px;
     text-align: center;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 13px;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 .title-section{
@@ -56,44 +52,82 @@ body {
 }
 
 .title-section h1{
-    margin-top: -2%;
+    margin-top: -1%;
     font-size: 55px;
 }
 
 .title-section p{
-    width: 80%;
-    color: #464646;
-    margin-top: -4%;
-    font-size: 14px;
+   color: #464646;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 14px;
+   margin-top: -20px;
+   margin-bottom: 6.5%;
 }
 
 .title-section strong{
     color: #3FE4D5;
 }
 
+#second-section{
+    margin-left: 13%;
+ }
+
 .second-section{
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 100%;
     margin: 5%;
     align-content: space-between;
     
 }
-.second-section ul{
+.second-section ul, li{
     list-style: none;
+    padding-left: 0;
+    font-size: 12.5px;
+    margin-bottom: 10px;
+}
 
+.icon{
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    padding: 5px;
+    background-color: #CFB0F7;
+    margin-right: 15px;
+}
+
+.icon-purple{
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    padding: 5px;
+    background-color: #ffffff;
+    margin-right: 15px;
 }
 
 .box-section{
     border: 1px solid #000000;
+    border-radius: 5px;
     margin-right: 10%;
     padding:1% 2%;
 }
 
-.box-section h2, h3, h4{
-    font-size: 15px;
+.box-section-purple{
+    background-color: #410FF8;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-right: 10%;
+    padding:1% 2%;
+}
 
-    
+.box-section-purple h3{
+    font-size: 15px;
+}
+
+.box-section h2, h4{
+    font-size: 15px;
 }
 
 #emoji{
@@ -111,6 +145,10 @@ body {
     font-size: 25px;
 }
 
+.box-section-purple strong{
+    font-size: 25px;
+}
+
 .price{
     color: #B5B3B3;
     font-size: 12px;
@@ -121,23 +159,33 @@ body {
     background-color: #410FF8;
     border: none;
     color: white;
+    font-weight: bold;
     padding: 6px 25px;
     text-align: center;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     border-radius: 5px;
     display: flex;
     align-items: center;
-   
-    align-content: center;
+    margin-bottom: 30px;
+}
+
+.box-section-purple button{
+    background-color: #ffffff;
+    border: none;
+    color: #410FF8;
+    font-weight: bold;
+    padding: 6px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .arrow-icon{
     width: 20px;
     margin: 5px;
-    color: #ffffff;
-}
-
-.box-section ul{
-    display: flex;align-items: flex-start;
 }
